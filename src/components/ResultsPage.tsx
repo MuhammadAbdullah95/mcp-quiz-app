@@ -247,6 +247,55 @@ const ResultsPage: React.FC<ResultsPageProps> = ({
             Take Quiz Again
           </button>
         </div>
+
+        {/* Developer Signature - Animated */}
+        <div className="mt-8 relative">
+          <div className="card bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white overflow-hidden">
+            <div className="relative z-10 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center animate-spin-slow">
+                  <span className="text-lg">⭐</span>
+                </div>
+              </div>
+              <h4 className="text-lg font-bold mb-2">Quiz Crafted with Excellence</h4>
+              <a 
+                href="https://github.com/MuhammadAbdullah95" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-2xl font-extrabold bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 inline-block"
+              >
+                Muhammad Abdullah
+              </a>
+              <p className="mt-2 text-gray-300 text-sm">
+                {result.percentage >= passingPercentage ? "🎉 Congratulations on your success!" : "💪 Keep learning, you've got this!"}
+              </p>
+              <div className="flex justify-center gap-2 mt-3 text-xs">
+                <span className="bg-white/10 px-2 py-1 rounded-full">🏆 Quiz Master</span>
+                <span className="bg-white/10 px-2 py-1 rounded-full">🎯 MCP Expert</span>
+                <span className="bg-white/10 px-2 py-1 rounded-full">💻 Full Stack Dev</span>
+              </div>
+              <div className="mt-3 flex justify-center">
+                <a 
+                  href="https://github.com/MuhammadAbdullah95" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full transition-all duration-300 hover:scale-105 text-xs"
+                >
+                  <span>🐙</span>
+                  <span>GitHub</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+            {/* Floating particles animation */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute top-4 left-4 w-2 h-2 bg-yellow-400 rounded-full animate-bounce opacity-60"></div>
+              <div className="absolute top-8 right-6 w-1 h-1 bg-pink-400 rounded-full animate-ping opacity-80"></div>
+              <div className="absolute bottom-6 left-8 w-3 h-3 bg-purple-400 rounded-full animate-pulse opacity-50"></div>
+              <div className="absolute bottom-4 right-4 w-2 h-2 bg-blue-400 rounded-full animate-bounce opacity-70" style={{animationDelay: '0.5s'}}></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

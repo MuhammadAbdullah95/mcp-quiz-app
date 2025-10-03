@@ -1,6 +1,22 @@
 # MCP Quiz App 📚
 
-A simple, frontend-only quiz application for Model Context Protocol (MCP) exam preparation. Built with React, TypeScript, and Tailwind CSS.
+<div align="center">
+
+![MCP Quiz App](https://img.shields.io/badge/MCP-Quiz%20App-blue?style=for-the-badge&logo=react)
+![Developer](https://img.shields.io/badge/Developer-Muhammad%20Abdullah-purple?style=for-the-badge&logo=github)
+![Tech Stack](https://img.shields.io/badge/Tech-React%20%7C%20TypeScript%20%7C%20Tailwind-green?style=for-the-badge)
+
+**🚀 Developed by [Muhammad Abdullah](https://github.com/MuhammadAbdullah95) 🚀**
+
+*Full Stack Developer & MCP Specialist*
+
+</div>
+
+---
+
+A comprehensive, frontend-only quiz application for **Model Context Protocol (MCP)** exam preparation. Featuring 150 carefully crafted questions with progressive difficulty levels and real-world scenarios.
+
+**✨ Built with excellence using React, TypeScript, and Tailwind CSS ✨**
 
 ## Features ✨
 
@@ -193,4 +209,28 @@ If you encounter any issues:
 
 ---
 
+## 👨‍💻 About the Developer
+
+<div align="center">
+
+### Muhammad Abdullah
+**Full Stack Developer & MCP Specialist**
+
+🚀 **Expertise:** React, TypeScript, Node.js, Python, AI Integration  
+🎯 **Specialization:** Model Context Protocol, OpenAI Agents SDK, FastMCP  
+💻 **Focus:** Building scalable web applications and AI-powered tools  
+🏆 **Mission:** Creating exceptional user experiences with cutting-edge technology  
+
+*"Building the future of AI-powered applications, one line of code at a time"*
+
+[![GitHub](https://img.shields.io/badge/GitHub-MuhammadAbdullah95-black?style=for-the-badge&logo=github)](https://github.com/MuhammadAbdullah95)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/muhammad-abdullah)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-orange?style=for-the-badge&logo=firefox)](https://muhammad-abdullah.dev)
+
+</div>
+
+---
+
 **Happy studying! 🎓** Good luck with your MCP exam preparation!
+
+*Crafted with ❤️ by Muhammad Abdullah*

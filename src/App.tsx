@@ -3,11 +3,18 @@ import { Question, QuizState, QuizResult, QuizView } from './types/quiz.types';
 import HomePage from './components/HomePage';
 import QuizInterface from './components/QuizInterface';
 import ResultsPage from './components/ResultsPage';
+import DeveloperBadge from './components/DeveloperBadge';
 import { questions as questionsData } from './data/questions';
 
 const PASSING_PERCENTAGE = 70;
 
 function App() {
+  // Developer Signature - Muhammad Abdullah
+  console.log('%c🚀 MCP Quiz App - Developed by Muhammad Abdullah 🚀', 'color: #4F46E5; font-size: 16px; font-weight: bold; background: linear-gradient(90deg, #4F46E5, #7C3AED, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+  console.log('%c💻 Full Stack Developer & MCP Specialist', 'color: #059669; font-size: 12px; font-weight: bold;');
+  console.log('%c⚡ Built with React + TypeScript + Tailwind CSS', 'color: #DC2626; font-size: 10px;');
+  console.log('%c🎯 Comprehensive MCP Exam Preparation Tool', 'color: #7C2D12; font-size: 10px;');
+  
   // Debug: Add console log to check if App is rendering
   console.log('App component rendering...');
   console.log('Questions data:', questionsData);
@@ -200,6 +207,8 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {renderCurrentView()}
+      {/* Floating Developer Badge - Only show on quiz interface */}
+      {currentView === 'quiz' && <DeveloperBadge variant="floating" />}
     </div>
   );
 }

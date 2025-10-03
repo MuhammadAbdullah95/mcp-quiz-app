@@ -68,6 +68,16 @@ const QuizInterface: React.FC<QuizInterfaceProps> = ({
               <p className="text-sm text-gray-600">
                 Question {quizState.currentQuestion + 1} of {questions.length}
               </p>
+              <p className="text-xs text-gray-400 mt-1">
+                by <a 
+                  href="https://github.com/MuhammadAbdullah95" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-medium text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
+                >
+                  Muhammad Abdullah
+                </a>
+              </p>
             </div>
 
             <div className="text-right">
