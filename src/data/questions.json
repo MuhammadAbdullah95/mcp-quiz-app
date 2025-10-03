@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "question": "What does MCP stand for?",
+    "options": [
+      "Model Context Protocol",
+      "Machine Communication Protocol", 
+      "Multi-Client Platform",
+      "Message Control Protocol"
+    ],
+    "correctAnswer": 0,
+    "explanation": "MCP stands for Model Context Protocol, an open standard developed by Anthropic to streamline how AI systems connect to external data sources and tools.",
+    "category": "MCP Fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "Which company developed the Model Context Protocol?",
+    "options": [
+      "OpenAI",
+      "Google",
+      "Anthropic",
+      "Microsoft"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anthropic developed the Model Context Protocol as an open standard for AI integrations.",
+    "category": "MCP Fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "What is the primary purpose of MCP?",
+    "options": [
+      "To replace HTTP protocols",
+      "To enable AI models to connect to external data sources and tools",
+      "To create new programming languages",
+      "To manage database connections"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MCP's primary purpose is to enable seamless integration between LLM applications and external data sources and tools, solving the limitation of AI models being isolated from real-time, dynamic data.",
+    "category": "MCP Fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "question": "Which protocol does MCP use for communication?",
+    "options": [
+      "HTTP/1.1",
+      "WebSocket",
+      "JSON-RPC 2.0",
+      "gRPC"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MCP uses JSON-RPC 2.0 for communication, allowing dynamic, two-way interactions between clients and servers.",
+    "category": "JSON-RPC",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "What are the three fundamental MCP primitives?",
+    "options": [
+      "Clients, Servers, Hosts",
+      "Tools, Resources, Prompts",
+      "HTTP, WebSocket, STDIO",
+      "Read, Write, Execute"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The three fundamental MCP primitives are Tools (model-controlled), Resources (app-controlled), and Prompts (user-controlled).",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "question": "Which MCP primitive is model-controlled?",
+    "options": [
+      "Resources",
+      "Tools",
+      "Prompts",
+      "Roots"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tools are model-controlled primitives - the AI model decides when and how to use them to perform specific actions.",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "question": "What is the MCP architecture pattern?",
+    "options": [
+      "Client → Server",
+      "Host → Client → Server",
+      "Server → Client → Host",
+      "Host → Server → Client"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MCP uses a Host → Client → Server architecture where the Host (AI application) connects through a Client to MCP Servers that expose tools and data.",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Which HTTP method is typically used for REST API resource creation?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correctAnswer": 1,
+    "explanation": "POST is typically used for creating new resources in REST APIs, as it's designed for non-idempotent operations that create new entities.",
+    "category": "REST APIs",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "question": "What does HTTP status code 404 indicate?",
+    "options": [
+      "Server Error",
+      "Unauthorized",
+      "Not Found",
+      "Bad Request"
+    ],
+    "correctAnswer": 2,
+    "explanation": "HTTP status code 404 indicates 'Not Found' - the requested resource could not be found on the server.",
+    "category": "HTTP Theory",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "In JSON-RPC 2.0, what field is required in every request?",
+    "options": [
+      "id",
+      "method",
+      "params",
+      "jsonrpc"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The 'jsonrpc' field is required in every JSON-RPC 2.0 request and must be exactly '2.0' to specify the protocol version.",
+    "category": "JSON-RPC",
+    "difficulty": "medium"
+  },
+  {
+    "id": 11,
+    "question": "Which OAuth 2.1 flow is recommended for public clients?",
+    "options": [
+      "Client Credentials",
+      "Resource Owner Password",
+      "Authorization Code with PKCE",
+      "Implicit Flow"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Authorization Code with PKCE (Proof Key for Code Exchange) is the recommended flow for public clients as it provides better security against code interception attacks.",
+    "category": "OAuth Security",
+    "difficulty": "hard"
+  },
+  {
+    "id": 12,
+    "question": "What is PKCE in OAuth 2.1?",
+    "options": [
+      "Public Key Certificate Exchange",
+      "Proof Key for Code Exchange",
+      "Private Key Cryptographic Extension",
+      "Protocol Key Configuration Element"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PKCE stands for Proof Key for Code Exchange, a security extension that prevents authorization code interception attacks in OAuth flows.",
+    "category": "OAuth Security",
+    "difficulty": "hard"
+  },
+  {
+    "id": 13,
+    "question": "Which transport protocol does MCP support for production deployments?",
+    "options": [
+      "STDIO only",
+      "HTTP only",
+      "Both STDIO and HTTP",
+      "WebSocket only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MCP supports both STDIO (for local development) and HTTP (including StreamableHTTP for production deployments) transport protocols.",
+    "category": "Capabilities & Transport",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of MCP Sampling capability?",
+    "options": [
+      "To sample network traffic",
+      "To delegate AI reasoning to clients",
+      "To collect performance metrics",
+      "To test server responses"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MCP Sampling capability allows servers to delegate reasoning tasks to clients, enabling AI-powered decision making within MCP tools.",
+    "category": "Capabilities & Transport",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "question": "When did OpenAI announce adoption of MCP?",
+    "options": [
+      "November 2024",
+      "January 2025",
+      "March 2025",
+      "June 2025"
+    ],
+    "correctAnswer": 2,
+    "explanation": "OpenAI announced adoption of MCP on March 25, 2025, with the Agents SDK already shipping with MCP support.",
+    "category": "OpenAI Integration",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "question": "Which MCP primitive provides read-only access to data?",
+    "options": [
+      "Tools",
+      "Resources",
+      "Prompts",
+      "Clients"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Resources are app-controlled primitives that provide read-only access to data like documents, databases, and APIs.",
+    "category": "MCP Fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "question": "What is the purpose of MCP Prompts?",
+    "options": [
+      "To execute server actions",
+      "To provide read-only data access",
+      "To offer pre-crafted instructions for workflows",
+      "To manage client connections"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Prompts are user-controlled primitives that provide pre-crafted instructions for common workflows, offering high-quality, reusable prompts.",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "question": "Which transport protocol is recommended for MCP development?",
+    "options": [
+      "HTTP",
+      "STDIO",
+      "WebSocket",
+      "gRPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "STDIO (Standard Input/Output) transport is recommended for local development, while HTTP is used for production deployments.",
+    "category": "Capabilities & Transport",
+    "difficulty": "medium"
+  },
+  {
+    "id": 19,
+    "question": "What does REST stand for?",
+    "options": [
+      "Representational State Transfer",
+      "Remote Execution State Transfer",
+      "Resource State Transmission",
+      "Reliable Execution State Transfer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "REST stands for Representational State Transfer, an architectural style for designing networked applications.",
+    "category": "REST APIs",
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "question": "Which HTTP status code indicates successful resource creation?",
+    "options": [
+      "200 OK",
+      "201 Created",
+      "202 Accepted",
+      "204 No Content"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HTTP status code 201 Created indicates that a new resource has been successfully created on the server.",
+    "category": "HTTP Theory",
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "question": "In JSON-RPC 2.0, what indicates a notification request?",
+    "options": [
+      "Missing 'method' field",
+      "Missing 'id' field",
+      "Missing 'params' field",
+      "Missing 'jsonrpc' field"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In JSON-RPC 2.0, a notification is a request without an 'id' field, indicating the client doesn't expect a response.",
+    "category": "JSON-RPC",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "question": "What is the main benefit of MCP's open standard approach?",
+    "options": [
+      "Faster processing speed",
+      "Lower memory usage",
+      "Interoperability between different AI systems",
+      "Better security encryption"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MCP's open standard approach enables interoperability, allowing different AI systems and tools to work together seamlessly without custom integrations.",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "question": "Which company originally developed MCP?",
+    "options": [
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Microsoft"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Anthropic originally developed the Model Context Protocol as an open standard for AI integrations.",
+    "category": "MCP Fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "question": "What is StreamableHTTP in MCP context?",
+    "options": [
+      "A video streaming protocol",
+      "An HTTP-based transport for production MCP deployments",
+      "A file transfer protocol",
+      "A database connection method"
+    ],
+    "correctAnswer": 1,
+    "explanation": "StreamableHTTP is an HTTP-based transport protocol used for production MCP deployments, supporting both stateful and stateless connections.",
+    "category": "Capabilities & Transport",
+    "difficulty": "hard"
+  },
+  {
+    "id": 25,
+    "question": "What is the purpose of MCP Roots capability?",
+    "options": [
+      "To manage user authentication",
+      "To discover user context and project information",
+      "To handle error logging",
+      "To manage server connections"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MCP Roots capability allows servers to discover and access user context, project information, and environment details.",
+    "category": "Capabilities & Transport",
+    "difficulty": "hard"
+  },
+  {
+    "id": 26,
+    "question": "Which OAuth 2.1 parameter is used in PKCE?",
+    "options": [
+      "client_secret",
+      "code_challenge",
+      "access_token",
+      "refresh_token"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PKCE uses code_challenge parameter (along with code_challenge_method) to prevent authorization code interception attacks.",
+    "category": "OAuth Security",
+    "difficulty": "hard"
+  },
+  {
+    "id": 27,
+    "question": "What is the recommended HTTP method for updating a complete resource in REST?",
+    "options": [
+      "POST",
+      "PUT",
+      "PATCH",
+      "UPDATE"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PUT is the recommended HTTP method for updating a complete resource in REST APIs, as it's idempotent and replaces the entire resource.",
+    "category": "REST APIs",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "question": "What does HTTP status code 401 indicate?",
+    "options": [
+      "Not Found",
+      "Unauthorized",
+      "Forbidden",
+      "Bad Request"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HTTP status code 401 indicates 'Unauthorized' - the request requires authentication or the provided credentials are invalid.",
+    "category": "HTTP Theory",
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "question": "In MCP, what does 'Host' refer to?",
+    "options": [
+      "The server machine",
+      "The AI application that needs external data access",
+      "The database server",
+      "The web browser"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In MCP architecture, the Host refers to the AI application (like Claude, ChatGPT, or custom AI) that needs access to external data or capabilities.",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "question": "What is the main advantage of JSON-RPC over REST for MCP?",
+    "options": [
+      "Better security",
+      "Faster performance",
+      "Support for bidirectional communication",
+      "Smaller message size"
+    ],
+    "correctAnswer": 2,
+    "explanation": "JSON-RPC supports bidirectional communication, allowing both client-to-server and server-to-client requests, which is essential for MCP's dynamic interactions.",
+    "category": "JSON-RPC",
+    "difficulty": "hard"
+  },
+  {
+    "id": 31,
+    "question": "What decorator is used to define MCP tools in Python?",
+    "options": [
+      "@tool",
+      "@mcp.tool",
+      "@fastmcp.tool",
+      "@server.tool"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The @mcp.tool decorator is used to convert regular Python functions into MCP tools with automatic schema generation.",
+    "category": "MCP Implementation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "Which HTTP version introduced multiplexing?",
+    "options": [
+      "HTTP/1.0",
+      "HTTP/1.1",
+      "HTTP/2",
+      "HTTP/3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "HTTP/2 introduced multiplexing, allowing multiple requests and responses to be sent concurrently over a single TCP connection.",
+    "category": "HTTP Theory",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "question": "What is HATEOAS in REST?",
+    "options": [
+      "HTTP Authentication Token Exchange Over Secure Sockets",
+      "Hypermedia As The Engine Of Application State",
+      "Hypertext Application Transfer Extension Over SSL",
+      "HTTP API Token Exchange Authentication System"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HATEOAS stands for Hypermedia As The Engine Of Application State, a REST principle where servers provide links to guide client navigation.",
+    "category": "REST APIs",
+    "difficulty": "hard"
+  },
+  {
+    "id": 34,
+    "question": "Which HTTP method is idempotent?",
+    "options": [
+      "POST",
+      "GET",
+      "PATCH",
+      "All of the above"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GET is idempotent - making multiple identical GET requests has the same effect as making a single request.",
+    "category": "HTTP Theory",
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "question": "What is the purpose of the MCP Server Inspector?",
+    "options": [
+      "To monitor server performance",
+      "To test and debug MCP servers interactively",
+      "To deploy MCP servers to production",
+      "To generate MCP server documentation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The MCP Server Inspector is a web-based tool for testing and debugging MCP servers without needing full application integration.",
+    "category": "MCP Implementation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 36,
+    "question": "In JSON-RPC 2.0, what is the range of server error codes?",
+    "options": [
+      "-32000 to -32099",
+      "-32600 to -32699",
+      "-32700 to -32799",
+      "-33000 to -33099"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Server error codes in JSON-RPC 2.0 are reserved in the range -32000 to -32099 for implementation-defined server errors.",
+    "category": "JSON-RPC",
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "question": "What is the primary transport protocol for HTTP/3?",
+    "options": [
+      "TCP",
+      "UDP",
+      "QUIC",
+      "SCTP"
+    ],
+    "correctAnswer": 2,
+    "explanation": "HTTP/3 runs on QUIC (Quick UDP Internet Connections), which is built on top of UDP, providing better performance than TCP.",
+    "category": "HTTP Theory",
+    "difficulty": "hard"
+  },
+  {
+    "id": 38,
+    "question": "Which MCP primitive is user-controlled?",
+    "options": [
+      "Tools",
+      "Resources",
+      "Prompts",
+      "Clients"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Prompts are user-controlled primitives - users decide when to apply them for common workflows.",
+    "category": "MCP Fundamentals",
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "question": "What is the purpose of OAuth 2.1 Resource Indicators (RFC 8707)?",
+    "options": [
+      "To identify the client application",
+      "To specify the intended audience for the token",
+      "To encrypt the authorization code",
+      "To validate the user's identity"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Resource Indicators allow clients to specify the intended audience (resource server) for the requested token, preventing token leakage and misuse.",
+    "category": "OAuth Security",
+    "difficulty": "hard"
+  },
+  {
+    "id": 40,
+    "question": "Which Python package manager is recommended for MCP development?",
+    "options": [
+      "pip",
+      "conda",
+      "uv",
+      "poetry"
+    ],
+    "correctAnswer": 2,
+    "explanation": "uv is the recommended fast Python package manager for MCP development projects due to its speed and dependency management capabilities.",
+    "category": "MCP Implementation",
+    "difficulty": "easy"
+  },
+  {
+    "id": 41,
+    "question": "What is the default port for HTTP?",
+    "options": [
+      "80",
+      "443",
+      "8080",
+      "3000"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Port 80 is the default port for HTTP connections, while port 443 is used for HTTPS.",
+    "category": "HTTP Theory",
+    "difficulty": "easy"
+  },
+  {
+    "id": 42,
+    "question": "In REST, what does the PATCH method do?",
+    "options": [
+      "Creates a new resource",
+      "Deletes a resource",
+      "Partially updates a resource",
+      "Retrieves a resource"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PATCH is used for partial updates to existing resources, modifying only specific fields rather than replacing the entire resource.",
+    "category": "REST APIs",
+    "difficulty": "medium"
+  },
+  {
+    "id": 43,
+    "question": "What is the purpose of the 'params' field in JSON-RPC 2.0?",
+    "options": [
+      "To specify the protocol version",
+      "To hold method parameters",
+      "To identify the request",
+      "To indicate the response format"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 'params' field in JSON-RPC 2.0 holds the parameters for the method being called, either as an array or object.",
+    "category": "JSON-RPC",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "question": "Which MCP capability allows servers to send progress updates?",
+    "options": [
+      "Sampling",
+      "Logging",
+      "Progress",
+      "Roots"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Progress capability in MCP allows servers to send progress updates during long-running operations.",
+    "category": "Capabilities & Transport",
+    "difficulty": "medium"
+  },
+  {
+    "id": 45,
+    "question": "What is the main difference between stateful and stateless HTTP connections in MCP?",
+    "options": [
+      "Stateful connections are faster",
+      "Stateless connections don't maintain session state",
+      "Stateful connections support bidirectional communication",
+      "Stateless connections use different protocols"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Stateful HTTP connections in MCP support bidirectional communication and maintain session state, while stateless connections treat each request independently.",
+    "category": "Capabilities & Transport",
+    "difficulty": "hard"
+  },
+  {
+    "id": 46,
+    "question": "What does HTTP status code 500 indicate?",
+    "options": [
+      "Client Error",
+      "Not Found",
+      "Internal Server Error",
+      "Unauthorized"
+    ],
+    "correctAnswer": 2,
+    "explanation": "HTTP status code 500 indicates an Internal Server Error - a generic error when the server encounters an unexpected condition.",
+    "category": "HTTP Theory",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "question": "In MCP, what is the purpose of the FastMCP library?",
+    "options": [
+      "To create HTTP clients",
+      "To build MCP servers with Python decorators",
+      "To manage database connections",
+      "To handle OAuth authentication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "FastMCP is a Python library that simplifies building MCP servers using decorators and automatic schema generation.",
+    "category": "MCP Implementation",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "question": "Which OAuth 2.1 flow is best for machine-to-machine communication?",
+    "options": [
+      "Authorization Code",
+      "Client Credentials",
+      "Implicit",
+      "Resource Owner Password"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Client Credentials flow is designed for machine-to-machine communication where no user interaction is required.",
+    "category": "OAuth Security",
+    "difficulty": "medium"
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of MIME types in HTTP?",
+    "options": [
+      "To encrypt data",
+      "To specify the format of content",
+      "To authenticate requests",
+      "To compress responses"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MIME types specify the format and nature of content being transmitted, such as application/json or text/html.",
+    "category": "HTTP Theory",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "question": "In JSON-RPC 2.0, what error code indicates 'Method not found'?",
+    "options": [
+      "-32600",
+      "-32601",
+      "-32602",
+      "-32603"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Error code -32601 indicates 'Method not found' in JSON-RPC 2.0, meaning the requested method doesn't exist or isn't available.",
+    "category": "JSON-RPC",
+    "difficulty": "medium"
+  }
+]
